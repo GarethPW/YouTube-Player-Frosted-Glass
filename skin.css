@@ -1,4 +1,4 @@
-/* v1.11.0 by /u/GarethPW */
+/* v1.12.0 by /u/GarethPW */
 
 /* Main Effect */
 
@@ -33,6 +33,22 @@
 .ytp-tooltip-text-wrapper
 {
     opacity: 0.8;
+}
+
+/* Main Effect: Transition Refinements */
+
+.ytp-progress-list,
+.ytp-volume-slider-handle::after
+{
+    transition: backdrop-filter .25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ytp-autohide .ytp-progress-list,
+.ytp-autohide .ytp-volume-slider-handle::after
+{
+    backdrop-filter: blur();
+    -webkit-backdrop-filter: blur();
+    transition: backdrop-filter .1s cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* Caption Refinements */
