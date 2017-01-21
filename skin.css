@@ -1,0 +1,68 @@
+/* v1.11.0 by /u/GarethPW */
+
+/* Main Effect */
+
+.annotation-popup-shape,
+.caption-window,
+.iv-drawer,
+.iv-promo,
+.ytp-cards-teaser,
+.ytp-ce-expanding-overlay-background,
+.ytp-fresca-suggested-promo-sidebar,
+.ytp-videowall-still-listlabel
+{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    opacity: 0.8 !important;
+}
+
+.ytp-ce-playlist-count,
+.ytp-popup,
+.ytp-preview,
+.ytp-progress-list,
+.ytp-tooltip,
+.ytp-volume-slider-handle::after
+{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.annotation.annotation-type-text,
+.ytp-load-progress,
+.ytp-panel,
+.ytp-tooltip-text-wrapper
+{
+    opacity: 0.8;
+}
+
+/* Caption Refinements */
+
+.caption-window {background-color: rgba(8,8,8,0.8) !important;}
+
+.captions-text>span {background-color: transparent !important;}
+
+/* Card Refinements */
+
+.ytp-cards-teaser {
+    border-right: 0;
+    margin-right: 12px;
+}
+
+.ytp-cards-teaser-box, .ytp-ce-expanding-overlay-background {background-color: rgba(256,256,256,0.8);}
+
+.ytp-ce-channel-metadata, .ytp-ce-website-metadata {
+    background-color: transparent;
+    border: none !important;
+}
+
+/* Controls/Tooltips Refinements */
+
+.ytp-hover-progress-light {background-color: rgba(255,255,255,0.4);}
+
+.ytp-preview {background-color: rgba(28,28,28,0.7);}
+
+.ytp-volume-slider-handle::after {z-index: -1;}
+
+/* Dropdown/Settings Refinements */
+
+.ytp-popup {background-color: rgba(28,28,28,0.8);}
