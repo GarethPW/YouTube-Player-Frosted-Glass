@@ -1,8 +1,8 @@
-/* v1.12.0 by /u/GarethPW */
+/* v1.12.1 by /u/GarethPW */
 
 /* Main Effect */
 
-.annotation-popup-shape,
+.annotation-popup-shape svg,
 .caption-window,
 .iv-drawer,
 .iv-promo,
@@ -27,7 +27,6 @@
     -webkit-backdrop-filter: blur(5px);
 }
 
-.annotation.annotation-type-text,
 .ytp-load-progress,
 .ytp-panel,
 .ytp-tooltip-text-wrapper
@@ -51,9 +50,11 @@
     transition: backdrop-filter .1s cubic-bezier(0.4, 0, 1, 1);
 }
 
-/* Caption Refinements */
+/* Annotation Refinements */
 
-.caption-window {background-color: rgba(8,8,8,0.8) !important;}
+.annotation.annotation-type-text {opacity: 0.9 !important;}
+
+/* Caption Refinements */
 
 .captions-text>span {background-color: transparent !important;}
 
@@ -64,7 +65,9 @@
     margin-right: 12px;
 }
 
-.ytp-cards-teaser-box, .ytp-ce-expanding-overlay-background {background-color: rgba(256,256,256,0.8);}
+.ytp-cards-teaser-box, .ytp-ce-expanding-overlay-background {
+    background-color: rgba(256,256,256,0.8);
+}
 
 .ytp-ce-channel-metadata, .ytp-ce-website-metadata {
     background-color: transparent;
