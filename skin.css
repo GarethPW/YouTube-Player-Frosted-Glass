@@ -1,18 +1,26 @@
-/* v1.12.2 by /u/GarethPW */
+/* v1.13.0 by /u/GarethPW */
 
 /* Main Effect */
 
 .annotation-popup-shape svg,
 .caption-window,
-.iv-drawer,
 .iv-promo,
 .ytp-cards-teaser,
 .ytp-fresca-suggested-promo-sidebar,
+.ytp-offline-slate-bar,
 .ytp-videowall-still-listlabel
 {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     opacity: 0.8 !important;
+}
+
+.iv-drawer,
+.ytp-playlist-menu
+{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    opacity: 0.9 !important;
 }
 
 .ytp-ce-expanding-overlay-background::before,
