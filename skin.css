@@ -1,4 +1,4 @@
-/* v1.13.0 by /u/GarethPW */
+/* v1.14.0 by /u/GarethPW */
 
 /* Main Effect */
 
@@ -25,6 +25,7 @@
 
 .ytp-ce-expanding-overlay-background::before,
 .ytp-ce-playlist-count,
+.ytp-pause-overlay::before,
 .ytp-popup,
 .ytp-preview,
 .ytp-progress-list,
@@ -40,6 +41,16 @@
 .ytp-tooltip-text-wrapper
 {
     opacity: 0.8;
+}
+
+.ytp-ce-expanding-overlay-background::before,
+.ytp-pause-overlay::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
 }
 
 /* Main Effect: Transition Refinements */
@@ -78,13 +89,8 @@
 }
 
 .ytp-ce-expanding-overlay-background::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    z-index: -1;
     margin: inherit;
     padding: inherit;
-    display: block;
 }
 
 .ytp-ce-channel-metadata, .ytp-ce-website-metadata {
@@ -103,3 +109,11 @@
 /* Dropdown/Settings Refinements */
 
 .ytp-popup {background-color: rgba(28,28,28,0.8);}
+
+/* Pause Overlay Refinements */
+
+.ytp-pause-overlay::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
